@@ -1,0 +1,349 @@
+:root{
+    --text-color:white;
+    --link-color:#dfdfdf;
+    --background-color:white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+    background-color: var(--background-color);
+    background-image: linear-gradient( rgb(0, 0, 0), rgb(0, 0, 0));
+
+}
+
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/*NAVBAR*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a {
+    color:var(--text-color);
+    font-size: 22px;
+    font-weight: 600; 
+ }
+
+ nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+    
+ }
+
+ nav .right a:hover {
+    color: black;
+    background: -webkit-linear-gradient(#fe58dd, #66adf4);
+    padding: 5px 15px;
+    border-radius: 5px;
+ }
+
+ nav .right a span {
+    margin-left: 5px;
+ }
+
+/*SECTION 1: Hero*/
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    gap: 40px;
+    margin-bottom: 100px;
+
+}
+.hero-section .text {
+    flex: 5;
+    text-align: justify;
+    color: var(--text-color);
+}
+.hero-section .text h2 {
+    font-size: 45px;
+    background: -webkit-linear-gradient(#fe58dd, #66adf4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-section .text .links {
+    margin-top: 25px;
+}
+.hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition:  .1xS;
+    
+
+}
+.hero-section .text .links  .resume{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 300px;
+    margin-bottom: 10px;
+    transition:  .1xS;
+    background: -webkit-linear-gradient(#fe58dd, #66adf4);
+     color: white;
+    
+
+}
+.hero-section .text .links a:hover{
+    background: -webkit-linear-gradient(#fe58dd, #66adf4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #fe58dd,  #66adf4);
+    border-image-slice: 1;
+ 
+}
+
+.hero-section .text .links .resume:hover{
+    color: black;
+    border: 2px solid var(--text-color);
+}
+
+.hero-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero-section .headshot img {
+    border-radius: 70px;
+    width:200px;
+    
+}
+
+/*SECTION 2 Skills*/
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    
+}
+.skills-section h2 {
+
+    font-size: 35px;
+    background: -webkit-linear-gradient(#fe58dd, #66adf4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills-section .text {
+    text-align: justify;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+   
+ 
+    position: relative;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #fe58dd,  #66adf4);
+    border-image-slice: 1;
+ 
+
+
+}
+
+.skills-section .cells .cell img{
+    
+    width: 80px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 2px;
+
+}
+
+
+/*SECTION 3: Testimony*/
+.testimony-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.testimony-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    background: -webkit-linear-gradient(to right,#fe58dd, #66adf4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.testimony-section .group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: -webkit-linear-gradient(#fe58dd, #66adf4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.testimony-section .group .personal-details {
+    text-align: center;
+    flex: 2;
+    color: var(--text-color);
+
+}
+
+.testimony-section .group .personal-details img {
+   width: 400px;
+   height: 400px;
+   object-fit: cover;
+   border-radius: 100px;
+ 
+}
+
+.testimony-section .group .personal-details img:hover{
+    color: white;
+    padding: 5px 15px;
+    border-radius: 100px;  
+ }
+
+.testimony-section .group .personal-details .p {
+    font-weight: 600;
+
+}
+
+.testimony-section .group .personal-details .p :last-child {
+    font-weight: normal;
+}
+
+
+.testimony-section .group .text {
+    flex: 8;
+}
+
+
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+
+.contact-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    background: -webkit-linear-gradient(#fe58dd, #66adf4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-section .group {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-section .group .text {
+    flex: 8;
+    color: var(--text-color);
+}
+
+
+@media (max-width: 850px) {
+    /*SECTION 1*/
+    .hero-section .text h2{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 740px) {
+    /*SECTION 1*/
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+    .hero-section .headshot img {
+        width: 300px;
+    }
+
+    /* SECTION 3: Testimony */
+    .testimony-section h2 {
+        text-align: center;
+    }
+
+    .testimony-section .group {
+        flex-direction: column;
+    }
+}
+ @media (max-width: 740px) {
+    nav {
+        padding: 0 20px;
+    }
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+    nav .right a span {
+        display: none;
+    }
+    /*SECTION 1*/
+    .headshot {
+        padding: 0 20px;
+    }
+    .headshot .text h2 {
+        font-size: 30px;
+    }
+
+    /*SECTION 2:Skills */
+    .skills-section {
+        padding: 0 20px;
+
+    }
+    .skills-section .cells .cell span{
+        font-size: 16px;
+    }
+
+    .contact-section h2 {
+        text-align: center;
+    }
+
+    .contact-section .group {
+        flex-direction: column;
+    }
+
+    }
+    
+ 
